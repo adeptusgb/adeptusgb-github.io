@@ -5,6 +5,11 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,maximum-scale=2">
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- SLATE THEME -->
     <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
 
 {% seo %}
@@ -14,14 +19,13 @@
   <body>
 
     <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          {% if site.github.is_project_page %}
-            <a id="forkme_banner" href="{{ site.github.repository_url }}">View on GitHub</a>
-          {% endif %}
+    <div id="header_wrap">
+        <header class="inner text-center">
+          <!-- <h1 id="project_title">{{ site.title | default: site.github.repository_name }}</h1> -->
 
-          <h1 id="project_title">{{ site.title | default: site.github.repository_name }}</h1>
-          <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
+          {% if layout.title %}
+            <h1 id="project_title">{{ layout.title }}</h1>
+          {% endif %}
 
           {% if site.show_downloads %}
             <section id="downloads">
@@ -33,19 +37,46 @@
     </div>
 
     <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        {{ content }}
-      </section>
+    <div id="main_content_wrap" class="main-content container-fluid">
+      <div class="row">
+
+        <!-- SIDEBAR LEFT -->
+        {% if site.sidebar-left %}
+          {% include sidebar.html %}
+        {% else %}
+          <div class="col-md-3">
+            
+          </div>
+        {% endif %}
+  
+        <!-- CONTENT -->
+        <section class="col-md-6">
+          {{ content }}
+        </section>
+  
+        <!-- SIDEBAR RIGHT -->
+        {% if site.sidebar-right %}
+          {% include sidebar.html %}
+        {% else %}
+          <div class="col-md-3">
+            
+          </div>
+        {% endif %}
+      </div>
     </div>
 
     <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        {% if site.github.is_project_page %}
-        <p class="copyright"><!--{{ site.title | default: site.github.repository_name }}--> maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p> 
-        {% endif %}
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+    <div id="footer_wrap">
+      <footer class="inner text-center">
+        <p>
+          |
+          {% if site.github.is_project_page %}
+            <a href="{{ site.github.repository_url }}">View on GitHub</a>
+          {% endif %}
+          | 
+          Published with <a href="https://pages.github.com">GitHub Pages</a>
+          |
+        </p>  
       </footer>
     </div>
   </body>

@@ -4,12 +4,18 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: [Adeptusgb]
-email: [gustavobrunodemelo@gmail.com]
-description: [""]
+title: Adeptusgb
+email: gustavobrunodemelo@gmail.com
+description: ""
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  [adeptusgb]
+github_username:  adeptusgb
+
+# Sidebar settings
+sidebar-right: true
+sidebar-left: false
+sidebar-about-description: "Gustavo Bruno"
+sidebar-about-pfp: https://github.com/adeptusgb.png
 
 # Build settings
 remote_theme: pages-themes/slate@v0.2.0
