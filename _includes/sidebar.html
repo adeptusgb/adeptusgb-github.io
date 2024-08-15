@@ -1,14 +1,17 @@
-<div id="sidebar" class="col-3">
-    <h3>Table of Contents</h3>
-    
-    <div class="text-left">
-
+<div id="sidebar" class="col-3 threecol">
+    <div class="text-left p-2">
         <div>
-            <h5>> About me </h5>
-            <img src="{{ site.sidebar-about-pfp }}" alt="profile picture" class="h-25 w-25">
-            <h5>{{ site.sidebar-about-description }}</h5>
+            <a href="/about/">
+                <h5>
+                    > About me 
+                </h5>
+            </a>
+            <img src="{{ site.sidebar-about-pfp }}" alt="profile picture" style="width: 150px; height: 150px;">
+            <p>
+                {{ site.sidebar-about-description }}
+            </p>
         </div>
 
-        <h5>> Projects </h5>
+        <a href="/projects/"><h5>> Projects </h5></a>
     </div>    
 </div>

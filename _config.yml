@@ -12,8 +12,6 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  adeptusgb
 
 # Sidebar settings
-sidebar-right: true
-sidebar-left: false
 sidebar-about-description: "Gustavo Bruno"
 sidebar-about-pfp: https://github.com/adeptusgb.png
 
