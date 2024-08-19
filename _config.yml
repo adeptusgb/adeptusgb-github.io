@@ -12,7 +12,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  adeptusgb
 
 # Sidebar settings
-sidebar-about-description: "Gustavo Bruno"
+sidebar-about-description: "<strong>Gustavo Bruno</strong> | Software Developer @ Brazil"
 sidebar-about-pfp: https://github.com/adeptusgb.png
 
 # Build settings

@@ -21,63 +21,56 @@
 
   <body>
 
-    <!-- HEADER -->
-    <div>
-        <header id="page-header" class="text-center row">
+    <header id="page-header" class="text-center row" style="
+      background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2) ), url('{{ page.background-img }}'); 
+      background-position: center;
+      background-size: cover;"
+      >
+      <!-- <img id="header-background" src="{{ page.background-img }}" alt="Header Background"> -->
 
-          <!-- NAVBAR -->
-          {% include navbar.html %}
+      <!-- NAVBAR -->
+      {% include navbar.html %}
 
-          <section class="col-6">
-            {% if page.title %}
-              <h1 id="header-title">{{ page.title }}</h1>
-            {% endif %}
-          </section>
+      <section class="col-6">
+        {% if page.title %}
+          <h1 id="header-title">{{ page.title }}</h1>
+        {% endif %}
+      </section>
 
-          
-        </header>
-    </div>
+    </header>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="main-content container-fluid">
+
+    <div id="content" class="main-content container-fluid">
       <div class="row">
 
         <!-- SIDEBAR LEFT -->
         {% if layout.sidebar-left %}
           {% include sidebar.html %}
         {% else %}
-          <div class="col-md-3">
-            
-          </div>
+          <div class="col-md-2"></div>
         {% endif %}
   
+
         <!-- CONTENT -->
-        <section class="col-md-6">
+        <section class="col-md-8">
           {{ content }}
         </section>
   
+
         <!-- SIDEBAR RIGHT -->
         {% if layout.sidebar-right %}
           {% include sidebar.html %}
         {% else %}
-          <div class="col-md-3">
-            
-          </div>
+          <div class="col-md-2"></div>
         {% endif %}
+
       </div>
     </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap">
-      <footer class="inner text-center">
-        <p>
-          
-          <a href="{{ site.github.repository_url }}">View on GitHub</a>
-          | 
-          Published with <a href="https://pages.github.com">GitHub Pages</a>
-          
-        </p>  
-      </footer>
-    </div>
+
+    <footer id="footer" "inner text-center">
+      {% include footer.html %}
+    </footer>
+    
   </body>
 </html>

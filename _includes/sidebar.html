@@ -1,17 +1,24 @@
-<div id="sidebar" class="col-3 threecol">
+<div id="sidebar" class="col-2 threecol">
     <div class="text-left p-2">
         <div>
+            <div style="width: 150px; height: 220px; vertical-align: middle;">
+                <a href="/about/">
+                    <img src="{{ site.sidebar-about-pfp }}" alt="profile picture" style="width: 150px; height: 150px; border: 0 auto; padding: 0; margin: 10px 0 0 0;">
+                </a>
+    
+                <p style="margin-top: 0; margin-bottom: 20px; font-size: 14px;">
+                    {{ site.sidebar-about-description }}
+                </p>
+            </div>
+
             <a href="/about/">
                 <h5>
                     > About me 
                 </h5>
             </a>
-            <img src="{{ site.sidebar-about-pfp }}" alt="profile picture" style="width: 150px; height: 150px;">
-            <p>
-                {{ site.sidebar-about-description }}
-            </p>
-        </div>
 
+        </div>
+            
         <a href="/projects/"><h5>> Projects </h5></a>
     </div>    
 </div>
