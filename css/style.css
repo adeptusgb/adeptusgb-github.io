@@ -46,6 +46,23 @@ footer {
   margin: 0 auto;
 }
 
+#sidebar-text {
+  margin-top: 0;
+  font-size: 14px;
+}
+
+#my-links i {
+  vertical-align: bottom;
+}
+#my-links a {
+  color: #875fe4;
+  text-decoration: none;
+  padding: 0 3px;
+}
+#my-links a:hover {
+  color: #d464f7;
+}
+
 #content {
   background-color: #f3eddb;
   margin: 0 auto;

@@ -15,6 +15,8 @@
     <!-- SLATE THEME -->
     <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
 
+    <!-- REMIX ICON | https://remixicon.com/  -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 {% seo %}
     {% include head-custom.html %}
   </head>
@@ -22,7 +24,7 @@
   <body>
 
     <header id="page-header" class="text-center row" style="
-      background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2) ), url('{{ page.background-img }}'); 
+      background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.1) ), url('{{ page.background-img }}'); 
       background-position: center;
       background-size: cover;"
       >
@@ -67,10 +69,8 @@
       </div>
     </div>
 
-
-    <footer id="footer" "inner text-center">
-      {% include footer.html %}
-    </footer>
+    <!-- FOOTER -->
+    {% include footer.html %}
     
   </body>
 </html>
