@@ -1,19 +1,28 @@
 <footer id="footer">     
 
-    <p id="my-links" class="text-center">
+    <p class="my-links text-center">
         <a href="https://github.com/adeptusgb" target="_blank"><i class="ri-github-fill"></i><strong> GitHub</strong></a>
-        
+        • 
         <a href="https://www.linkedin.com/in/gustavobrunodemelo/" target="_blank"><i class="ri-linkedin-fill"></i> <strong> Linkedin</strong></a>
-        
+        • 
         <a href="mailto:gustavobrunodemelo@gmail.com"><i class="ri-mail-fill"></i><strong> Email</strong></a>
     </p>
-    
-    <br>
 
-    <p id="footer-text">
-        <a href="{{ site.github.repository_url }}">View on GitHub</a>
+    <p class="footer-text">
+        <iframe style="margin-left: 2px; margin-bottom:-5px;" frameborder="0" scrolling="0" width="75px" height="20px"
+            src="https://ghbtns.com/github-btn.html?user=adeptusgb&repo=adeptusgb.github.io&type=star&count=true">
+        </iframe>
         | 
         Published with <a href="https://pages.github.com">GitHub Pages</a>
     </p>
+
+    <p id="copyright" class="footer-text" >
+    </p>
+
+    
+
+    <script>
+        document.getElementById("copyright").innerHTML = new Date().getFullYear() + ' &copy; Gustavo Bruno de Melo';
+    </script>
 
 </footer>  
