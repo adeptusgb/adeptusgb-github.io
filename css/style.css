@@ -13,7 +13,7 @@ footer {
   text-decoration: none;
 }
 
-.navbar-text {
+#navbar-text {
   color: white;
   text-decoration: none;
   font-weight: bold;
@@ -21,7 +21,7 @@ footer {
   padding-right: 10px;
   padding-left: 10px;
 }
-.navbar-text:hover {
+#navbar-text:hover {
   color: rgb(216, 216, 216);
   text-decoration: none;
 }
@@ -53,18 +53,18 @@ footer {
   margin-bottom: 5px;
   font-size: 14px;
 }
-.my-links {
+#my-links {
   color: #674188;
 }
-.my-links i {
+#my-links i {
   vertical-align: bottom;
 }
-.my-links a {
+#my-links a {
   color: #875fe4;
   text-decoration: none;
   padding: 0 3px;
 }
-.my-links a:hover {
+#my-links a:hover {
   text-decoration: none;
   color: #d464f7;
 }
@@ -90,15 +90,15 @@ footer {
   margin: 0 5 0 0;
 }
 
-.footer-text {
+#footer-text {
   font-weight: bold;
   color: #674188;
 }
-.footer-text a {
+#footer-text a {
   color: #875fe4;
   text-decoration: none;
 }
-.footer-text a:hover {
+#footer-text a:hover {
   color: #d464f7;
   text-decoration: none;
 }
